@@ -106,7 +106,7 @@ You can enhance the styling of the HTML pages using the `style.css` file located
 ## Features
 
 1. **User Registration:**
-   - Register users by providing their name, email, and password.
+   - Register users by providing their name, username, and password.
 2. **Display Users:**
    - View all registered users in a table format on the frontend.
 
@@ -120,7 +120,7 @@ You can enhance the styling of the HTML pages using the `style.css` file located
   ```json
   {
     "name": "string",
-    "email": "string",
+    "username": "string",
     "password": "string"
   }
   ```
