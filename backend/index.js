@@ -50,6 +50,27 @@ app.get("/get-data", (req, res) => {
 })
 
 
+app.post("/edit-data", (req, res) => {
+
+    let {data: newData, index} = req.body;
+
+    data[index] = newData;
+
+    return res.json({msg: "Data Updated"});
+
+})
+
+app.post("/delete-data", (req, res) => {
+
+    let {index} = req.body;
+
+    data = data.filter((d, i) => i !== index);
+
+    return res.json({msg: "Data Deleted"});
+
+})
+
+
 // app.listen is used to start the server on the specified port.
 // It takes two parameters, the port number and a callback function.
 // The callback function is executed when the server is started.
